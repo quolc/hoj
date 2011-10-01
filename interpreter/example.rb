@@ -16,6 +16,10 @@ end
 puts code
 
 hcode = HCode.parse(code)
+if !hcode
+	puts "Invalid code."
+	exit()
+end
 hcode.init()
 while true do
 	print hcode.turn()
