@@ -1,3 +1,7 @@
+# How to use:
+#   $ruby example.rb field.in code.in
+#
+
 require './judge'
 
 ff = open(ARGV[0])
@@ -8,7 +12,7 @@ fc = open(ARGV[1])
 code = fc.read
 fc.close
 
-hjudge = HJudge.new(filed, code)
-result = hjudge.judge()
+hJudge = HJudge.new(filed, code)
+result = hJudge.judge()
 
 puts result.status
